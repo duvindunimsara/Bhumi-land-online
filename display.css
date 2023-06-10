@@ -1,0 +1,100 @@
+.table{
+    margin: 100px 50px 100px 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+  }
+
+.contactus-table{
+    font-size: 15px;
+    border-radius: 7px 7px 0 0;
+    overflow:auto;
+    box-shadow: 0 0 20px  rgba(0, 0, 0, 0.15);
+}
+
+.contactus-table thead tr{
+    background-color:#22B2B2;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contactus-table th,
+.contactus-table td{
+    padding: 12px 15px;
+    word-break: break-word;
+    min-width: 150px;
+}
+
+.contactus-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    color: #22B2B2;
+}
+
+.contactus-table tbody tr:nth-of-type(odd){
+    background-color: #f3f3f3;
+}
+
+.contactus-table tbody tr:last-of-type{
+    border-bottom: 2px solid #22B2B2;
+}
+
+.udbtns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    
+}
+button{
+    color: white;
+    font-size: 13px;
+    font-family: cursive;
+    width: auto;
+}
+
+
+.udbtns a{
+    text-decoration: none;
+    
+}
+
+.ubtn{
+    background-color: #22B2B2;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+.ubtn a{
+    color: white;
+}
+
+.dbtn a{
+    color: white;
+}
+
+.dbtn{
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: red;
+    margin: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 2000px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space:normal;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Land Registration Form</title>
+  <link href="land form.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("land.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .input {
+      width: 98%;
+    }
+    
+    .reset, .submit {
+      width: 48%;
+      height: 30px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .submit:hover {
+      background-color: gray;
+      color: black;
+    }
+    
+    .submit-button {
+      background-color: #23b17d;
+      color: #5b4f4f;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+    
+    .submit-button:hover {
+      background-color: yellow;
+    }
+    
+    .blur-form {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .photo-preview {
+      max-width: 200px;
+      max-height: 200px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form class="blur-form" style="text-align:left; width : 450px; padding: 5px; margin:auto; border-radius: 5px; box-shadow: 2px 2px 2px gray">
+    <h2>Personal Details</h2>
+    <input class="input" type="text" id="full-name" name="full-name" placeholder="Enter your full name"><br><br>
+    <input class="input" type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+    <input class="input" type="tel" id="contact-no" name="contact-no" placeholder="Enter your phone number"><br><br>
+    
+    <h2>Land Information</h2>
+    <h3>Facilities</h3>
+    <label><input type="checkbox" name="facilities[]" value="Three Phases Electricity">Three Phases Electricity</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Pipe Borne Water">Pipe Borne Water</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Wide Road">Wide Road</label><br>
+    <label><input type="checkbox" name="facilities[]" value="School">School</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Super Market">Super Market</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Bank">Bank</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Bus Route">Bus Route</label><br>
+    <label><input type="checkbox" name="facilities[]" value="City Area">City Area</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Hospital">Hospital</label><br>
+    <label><input type="checkbox" name="facilities[]" value="Communication">Communication</label><br><br>
+    <div style="text-align: right;">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location"><br><br>
+      <label for="price-per-perch">Price per Perch:</label>
+      <input type="number" id="price-per-perch" name="price-per-perch"><br><br>
+      <label for="property-size">Property Size:</label>
+      <input type="number" id="property-size" name="property-size"><br><br>
+      <label for="total-value">Total Value:</label>
+      <input type="number" id="total-value" name="total-value"><br><br>
+      <label for="property-details">Property Details:</label><br>
+      <textarea style="width:99%;" id="property-details" name="property-details" rows="4" cols="50"></textarea><br><br>
+    </div>
+    
+    <label for="photo-upload">Upload Photos:</label>
+    <input type="file" id="photo-upload" name="photo-upload" multiple><br>
+    <div id="photo-preview"></div><br>
+
+    <input type="reset" class="submit-button" value="RESET">
+    <input type="submit" class="submit-button" value="SEND">
+	
+  </form>
+  
+  <script>
+    // Handle file input change event
+    document.getElementById('photo-upload').addEventListener('change', function(event) {
+      var preview = document.getElementById('photo-preview');
+      preview.innerHTML = ''; // Clear existing preview
+
+      var files = event.target.files;
+      for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          var image = document.createElement('img');
+          image.className = 'photo-preview';
+          image.src = e.target.result;
+          preview.appendChild(image);
+        };
+
+        reader.readAsDataURL(file);
+      }
+    });
+    
+    // Handle reset button click event
+    document.querySelector('input[type="reset"]').addEventListener('click', function() {
+      var preview = document.getElementById('photo-preview');
+      preview.innerHTML = ''; // Clear photo preview
+    });
+  </script>
+  
+  
+</body>
+</html>

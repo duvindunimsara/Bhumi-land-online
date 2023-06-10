@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Logout Pop-up Example</title>
+    <script>
+window.addEventListener('DOMContentLoaded', (event) => {
+        const logoutButton = document.querySelector('.logout-button');
+
+        logoutButton.addEventListener('click', () => {
+            const result = confirm('Are you sure you want to logout?'); // Display the pop-up dialog box
+
+            if (result) {
+                // User clicked "OK" or "Yes"
+                // Perform logout action or redirect to logout page
+                window.location = 'logout.php';
+            } else {
+                // User clicked "Cancel" or "No"
+                // Do nothing or perform any desired action
+            }
+        });
+    });
+     </script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- Navigation links -->
+        <a href="./index.html">Home</a>
+        <a href="./about us.html">About Us</a>
+        <a href="./Lands main page.html">Land</a>
+        <a href="./payment.html">Payment Plans</a>
+        <a href="./contact us.html">Contact Us</a>
+        <a href="./user_info.php">User Info</a>
+        <a href="./login.php">Login</a>
+        <input type="text" id="searchInput" onclick="searchGoogle()" placeholder="Search on Google" />
+        <button class="logout-button">Logout</button>
+    </div> 
+    
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+
+      <div class="home"> 
+        <div class="hcontainer">
+            <div class="himg">
+               <img src="./img/Land.jpeg" alt="land">
+
+             
+            </div>
+        </div>
+    </div>
+
+    <div class="endcont">
+        <div class="leftsec">
+            <h1>WHY CHOOSE US</h1>
+            <p>Branching out under the unfaltering trademark ‘BHUMI’, we as BHUMI Lands have ventured into the industry of selling lands and property in Sri Lanka as a leading and trustworthy land sale company.
+             As a tough and strategic competitor, we thrive with a history of eminence and expertise, in assisting you in finding the ideal land located in the most efficient location to suit your expectations and lifestyle.
+             With standardized professionalism and experience in complementing your ideal dreams with the best lands with minimum inconveniences caused, being time and cost effective in bringing your cherished dreams into reality.</p>
+
+        </div>
+        <div class="rightsec">
+            <div class="himg2">
+
+             <img src="./img/iso2015.png" alt="iso">
+
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="item">
+        <h2>OUR LATEST LOCATIONS</h2>
+
+        <div class="item">
+            <a href="#"><img src="./img/L1.jpg" alt="Item 1"></a>
+            <h3>Meegoda</h3>
+            <p>Total Blocks : 19</p>
+            <p>Contact : 0771064393</p>
+            <p>Price: 935000 LKR Onwards</p>
+          </div>
+          
+          <div class="item">
+            <a href="#"><img src="./img/L2.jpeg" alt="Item 2"></a>
+            <h3>Maharagama</h3>
+            <p>Total Blocks : 120</p>
+            <p>Contact : 0717265554</p>
+            <p>Price: 1200000 LKR Onwards</p>
+          </div>
+          
+          <div class="item">
+            <a href="#"><img src="./img/L3.jpeg" alt="Item 3"></a>
+            <h3>Padukka</h3>
+            <p>Total Blocks : 25</p>
+            <p>Contact : 0772343651</p>
+            <p>Price: 850000 LKR Onwards</p>
+          </div>
+
+          <div class="item">
+            <a href="#"><img src="./img/L4.jpg" alt="Item 4"></a>
+            <h3>Mirissa</h3>
+            <p>Total Blocks : 52</p>
+            <p>Contact : 0723651231</p>
+            <p>Price: 920000 LKR Onwards</p>
+          </div>
+
+          <div class="item">
+            <a href="#"><img src="./img/L5.jpeg" alt="Item 5"></a>
+            <h3>Gampola</h3>
+            <p>Total Blocks : 21</p>
+            <p>Contact : 0756672561</p>
+            <p>Price: 356000 LKR Onwards</p>
+          </div>
+
+         <div class="see-more">
+          <a href="Lands main page.html" class="see-more-button">See More</a>
+          </div>
+
+    </div>
+
+
+
+
+      
+        
+
+ 
+
+      <footer>
+        <!-- Footer content -->
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="mailto:info@bhumi.gmail.com" style="color: white;">Email: info@bhumi.gmail.com</a>
+                <p>Fax: +94115579862</p>
+                <p>Contact Number: +94115579861</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">FAQ</a>
+                <p>Technical Support: +9415579855</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p><center>&copy; 2023- Bhumi lands- All Rights Reserved
+                Concept, Design & Development by Web Bhumi</center></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

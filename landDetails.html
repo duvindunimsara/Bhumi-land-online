@@ -1,0 +1,140 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>landDetails</title>
+  <link href="./css/landDetails.css" rel="stylesheet" type="text/css" />
+  
+  <title>Logout Pop-up Example</title>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+            const logoutButton = document.querySelector('.logout-button');
+    
+            logoutButton.addEventListener('click', () => {
+                const result = confirm('Are you sure you want to logout?'); // Display the pop-up dialog box
+    
+                if (result) {
+                    // User clicked "OK" or "Yes"
+                    // Perform logout action or redirect to logout page
+                    window.location = 'logout.php';
+                } else {
+                    // User clicked "Cancel" or "No"
+                    // Do nothing or perform any desired action
+                }
+            });
+        });
+         </script>
+  
+ 
+</head>
+<body>
+
+<div class="navbar">
+  
+    <!-- Navigation links -->
+    <a href="./index.html">Home</a>
+    <a href="./about us.html">About Us</a>
+    <a href="./Lands main page.html">Land</a>
+    <a href="./payment.html">Payment Plans</a>
+    <a href="./contact us.html">Contact Us</a>
+    <a href="./user_info.php">User Info</a>
+	  <a href="./login.php">Login</a>
+    <input type="text" id="searchInput" onclick="searchGoogle()" placeholder="Search on Google" />
+    <button class="logout-button">Logout</button>
+</div>
+   
+
+</body>
+
+ <div class="wrapper">
+  <div class="box">
+  <div class="blur-overlay"></div>
+    <br> <br>
+
+<h2><b><center>Land Details</center></b></h2><br><br><br>
+
+ 
+
+<div class="land-section">
+      <h2 class="right-align">Land ****</h2>
+</div>	  
+	  <div class="land-photo">
+   <img src="./img/for sale.jpg" alt="Land Photo">
+   </div>
+   
+    <div class="pic-1">
+   <img src="./img/pic 1.jpg" alt="Land Photo">
+   
+   
+    
+   <img src="./img/pic 2.jpeg" alt="Land Photo">
+   
+   
+   
+   <img src="./img/pic 3.jpeg" alt="Land Photo">
+   </div>
+   
+    
+
+<div class="land-section">	
+      <ul class="land-list">
+        <li>
+          <label for="location"><b>Location of Land:</b></label>
+          <span id="location-value">**********</span>
+        </li>
+        <li>
+          <label for="size-of-land"><b>Size of Land:</b></label>
+          <span id="size-of-land-value">*******</span>
+        </li>
+        <li>
+          <label for="type-of-land"><b>Type of Land:</b></label>
+          <span id="type-of-land-value">*******</span>
+        </li>
+        <li>
+          <label for="facilities"><b>Facilities:</b></label>
+          <span id="facilities-value"><ol><li>*********</li><br>
+		                              <li>*********</li><br>
+									  <li>*********</li><br>
+									  <li>*********</li>
+									  </ol>
+		</span>
+        </li>
+      </ul>
+	  
+	  </div>
+	  
+     <br><br>
+	 
+	
+	 
+	 <div class = "reset">
+	 <input type="reset" class="submit-button" value="Cancel">
+      
+	 </div>
+	 
+	 </div>
+	 </div>
+	 <footer>
+        <!-- Footer content -->
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="mailto:info@bhumi.gmail.com" style="color: white;">Email: info@bhumi.gmail.com</a>
+                <p>Fax: +94115579862</p>
+                <p>Contact Number: +94115579861</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">FAQ</a>
+                <p>Technical Support: +9415579855</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p><center>&copy; 2023- Bhumi lands- All Rights Reserved
+                Concept, Design & Development by Web Bhumi</center></p>
+        </div>
+    </footer>
+
+
+
+</html>

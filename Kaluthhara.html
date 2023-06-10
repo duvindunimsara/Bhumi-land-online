@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lands</title>
+<link href="./css/kaluthara.css" rel="stylesheet" >
+
+<title>Logout Pop-up Example</title>
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    const logoutButton = document.querySelector('.logout-button');
+
+    logoutButton.addEventListener('click', () => {
+        const result = confirm('Are you sure you want to logout?'); // Display the pop-up dialog box
+
+        if (result) {
+            // User clicked "OK" or "Yes"
+            // Perform logout action or redirect to logout page
+            window.location = 'logout.php';
+        } else {
+            // User clicked "Cancel" or "No"
+            // Do nothing or perform any desired action
+        }
+    });
+});
+ </script>
+
+</head>
+<body>
+  <div class="navbar">
+    <!-- Navigation links -->
+    <a href="./index.html">Home</a>
+    <a href="./about us.html">About Us</a>
+    <a href="Lands main page.html">Land</a>
+    <a href="./payment.html">Payment Plans</a>
+    <a href="./contact us.html">Contact Us</a>
+    <a href="./user_info.php">User Info</a>
+	<a href="./login.php">Login</a>
+    <input type="text" id="searchInput" onclick="searchGoogle()" placeholder="Search on Google" />
+    <button class="logout-button">Logout</button>
+</div>
+
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h4 class="logo">Kaluthara&nbsp;</h4>
+	  <br>
+  </header>
+  
+ 
+   
+
+		<div class><h3>Lands On Kaluthara</h3>
+			</div>
+   </div>
+	  
+
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID&nbsp; : *******</h4>
+     <p class="tag">pricing :***** per&nbsp; Perch</p>
+	 <a href="landDetails.html" class="button">Details&nbsp;</a>
+
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>&nbsp;Land ID: *******</h4>
+      <p class="tag">&nbsp;pricing :***** per Perch</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+      
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID : *******</h4>
+      <p class="tag">pricing :***** per Perch</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+      
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID: *******</h4>
+      <p class="tag">pricing :***** per Perch</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+      
+    </div>
+  </div>
+<div class="gallery">
+  <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID : *******</h4>
+    <p class="tag">pricing :***** per Perch</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+</div>
+  <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID : *******</h4>
+      <p class="tag">pricing :***** per Perch&nbsp;</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+      
+    </div>
+  <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID : *******</h4>
+      <p class="tag">pricing :***** per Perch</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+      
+    </div>
+  <div class="thumbnail"> <a href="#"><img src="./img/landimg.jpg" alt="" width="2000" class="cards"/></a>
+      <h4>Land ID : *******</h4>
+      <p class="tag">pricing :***** per Perch</p>
+	  <a href="landDetails.html" class="button">Details&nbsp;</a>
+  </div>
+	  
+  </div>
+  <!-- Footer Section -->
+  <div class="Footer">
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Email: info@bhumi.gmail.com</p><br>
+                <p>Fax: +94115579862</p><br>
+                <p>Contact Number: +94115579861</p>
+            </div>
+            <div class="footer-center"><hr style="height:100px; border-top: 1px solid white;" ></div>
+            <div class="footer-right">
+                <a href="#">FAQ</a><br>
+                <p>Tecnical Support: +9415579855</p><br>
+            </div>
+        </div>
+        <hr style="border: none; border-top: 1px solid white; margin: 10px 0; width: 1200px;">
+        <div class="copyright">
+            <p>Copyright © 2023- Bhumi lands- All Rights Reserved
+            Concept, Design & Development by Web Bhumi</p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

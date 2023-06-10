@@ -1,0 +1,63 @@
+/* Footer Styles */
+footer {
+	margin-top: auto;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.buyer {
+    display: none;
+}
+
+.seller {
+    display: none;
+}
+
+.buyer.show{
+    display: block;
+}
+
+.seller.show {
+    display: block;
+}

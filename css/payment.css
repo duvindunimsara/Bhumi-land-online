@@ -1,0 +1,204 @@
+@media(max-width:700px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:350px){
+    .footer-col {
+        width: 100%
+      }
+}
+
+        body {
+			display: flex;
+			flex-direction: column;
+            font-family: Arial, sans-serif;
+			background-image: url("./img/payment.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100vh;
+			
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: yellow;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .navbar a:hover {
+            background-color: none;
+            color: green;
+        }
+
+        .search-bar {
+            padding: 8px;
+        }
+
+        .logout-button {
+            background-color: gray;
+            color: black;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logout-button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+/* CSS for wrapper */
+.wrapper {
+  margin: 20px auto;
+  width: 60%;
+}
+
+/* CSS for box */
+.box {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.box h1 {
+  margin-top: 0;
+}
+
+/* CSS for order section */
+.order-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.order-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-list li {
+  margin-bottom: 10px;
+}
+
+.order-list li label {
+  font-weight: bold;
+}
+
+/* CSS for land photo */
+.land-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.land-photo img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: yellow;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  color: yellow;
+}
+
+
+/* CSS for payment method */
+.payment-method-question {
+  margin-top: 20px;
+}
+
+.payment-method-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.payment-method-buttons button {
+  margin: 0 5px;
+}
+
+/* CSS for more information */
+.more-information {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.more-information p {
+  margin-bottom: 5px;
+}
+
+.more-information-btn {
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+	margin-top: auto;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}

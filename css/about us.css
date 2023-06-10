@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+}
+
+.navbar a {
+    color: yellow;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.navbar a:hover {
+    background-color: none;
+    color: green;
+}
+
+.search-bar {
+    padding: 8px;
+}
+
+.logout-button {
+    background-color: gray;
+    color: black;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+	margin-top: auto;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+/*about us*/
+
+.abimg img{
+    width:100%;
+    height: 500px;
+
+}
+
+.abimg h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    color: rgb(2, 59, 2);
+}
+
+.abimg p{   
+    text-align: center;
+    margin: -25px 150px 75px 150px;
+    font-size: 22px;
+    font-weight:500;
+}
+
+@media(max-width: 700px){
+    .abimg p{
+       margin: 30px;
+       font-size: 18px;
+       text-align: justify;
+    }
+}
+
+.abimg p span{   
+    font-size: 25px;
+    color: rgb(2, 59, 2);
+    font-weight: bold;
+
+}
+
+.endcontainer{
+    display: flex;
+    background-color:rgb(2, 59, 2); 
+
+
+}
+
+.leftsection{
+    flex-basis: 33.33%;
+}
+.leftsection img{
+    max-width: 100%;
+    height: auto;
+}
+
+.middlesection{
+    flex-basis: 33.33%;
+    background-color:rgb(2, 59, 2); 
+}
+
+.rightsection{
+    flex-basis:33.33%;
+    background-color:#025802;
+}
+
+.Mcontainer{
+    margin: 200px 50px 100px 50px;
+    color: #fff;
+    
+}
+.Rcontainer{
+    margin: 200px 50px 100px 50px;
+    color: #fff;
+}
+.Mcontainer h3{
+    font-size: 25px;
+}
+.Mcontainer p{
+    font-size: 20px;
+    font-family: 'Roboto', 'Lato', 'Open Sans', sans-serif;
+
+}
+.Rcontainer h3{
+    font-size: 25px;
+}
+.Rcontainer p{
+    font-size: 20px;
+    font-family: 'Roboto', 'Lato', 'Open Sans', sans-serif;
+
+}
+.logo img {
+    margin: 5px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+
+

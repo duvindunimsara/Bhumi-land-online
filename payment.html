@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Payment</title>
+  <link href="./css/payment.css" rel="stylesheet" type="text/css" />
+  
+  <title>Logout Pop-up Example</title>
+    <script>
+window.addEventListener('DOMContentLoaded', (event) => {
+        const logoutButton = document.querySelector('.logout-button');
+
+        logoutButton.addEventListener('click', () => {
+            const result = confirm('Are you sure you want to logout?'); // Display the pop-up dialog box
+
+            if (result) {
+                // User clicked "OK" or "Yes"
+                // Perform logout action or redirect to logout page
+                window.location = 'logout.php';
+            } else {
+                // User clicked "Cancel" or "No"
+                // Do nothing or perform any desired action
+            }
+        });
+    });
+     </script>
+
+</head>
+
+
+
+<div class="navbar">
+    <!-- Navigation links -->
+    <a href="./index.html">Home</a>
+    <a href="./about us.html">About Us</a>
+    <a href="./Lands main page.html">Land</a>
+    <a href="./payment.html">Payment Plans</a>
+    <a href="./contact us.html">Contact Us</a>
+    <a href="./user_info.php">User Info</a>
+	<a href="./login.php">Login</a>
+    <input type="text" id="searchInput" onclick="searchGoogle()" placeholder="Search on Google" />
+    <button class="logout-button">Logout</button>
+</div>
+</body>
+
+   <div class="wrapper">
+  <div class="box">
+  <div class="blur-overlay"></div>
+    <br> <br>
+       <center><h1>Payment Method</center></h1>
+    <div class="order-section">
+      <h2 class="left-align">Your Order</h2>
+      <ul class="order-list">
+        <li>
+          <label for="land-id"><b>Land ID:</b></label>
+          <span id="land-id-value">LandID1</span>
+        </li>
+        <li>
+          <label for="price-per-perch"><b>Price per Perch:</b></label>
+          <span id="price-per-perch-value">500000</span>
+        </li>
+        <li>
+          <label for="size-of-land"><b>Size of Land:</b></label>
+          <span id="size-of-land-value">20</span>
+        </li>
+        <li>
+          <label for="total-price"><b>Total Price:</b></label>
+          <span id="total-price-value">Rs 10000000</span>
+        </li>
+      </ul>
+
+      <div class="land-photo">
+   <img src="./img/land_sale.jpeg" alt="Land Photo">
+        <button type="submit" class="btn">Remove</button>
+      </div>
+    </div>
+
+    <h3 class="payment-method-question">Which payment method do you prefer?</h3>
+    <div class="payment-method-buttons">
+     <button type="submit" class="btn"><a href="full payment.html">Full Payment</a></button>
+	<button type="submit" class="btn"><a href="Installments payement.html">Installments</a></button>
+    </div>
+
+    <div class="more-information">
+      <p>For more information</p>
+      <a href="tel:+9415214523" class="more-information-btn">Call +9415214523</a>
+    </div>
+
+  </div>
+   </div>
+   <footer>
+        <!-- Footer content -->
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="mailto:info@bhumi.gmail.com" style="color: white;">Email: info@bhumi.gmail.com</a>
+                <p>Fax: +94115579862</p>
+                <p>Contact Number: +94115579861</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">FAQ</a>
+                <p>Technical Support: +9415579855</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p><center>&copy; 2023- Bhumi lands- All Rights Reserved
+                Concept, Design & Development by Web Bhumi</center></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

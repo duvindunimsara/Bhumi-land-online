@@ -1,0 +1,187 @@
+@media(max-width:700px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:350px){
+    .footer-col {
+        width: 100%;
+    }
+}
+
+        body {
+			display: flex;
+			flex-direction: column;
+            font-family: Arial, sans-serif;
+			background-image: url("../img/login.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100vh;
+			
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color:black;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: yellow;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .navbar a:hover {
+            background-color: none;
+            color: green;
+        }
+
+        .search-bar {
+            padding: 8px;
+        }
+
+        .logout-button {
+            background-color: #45bc1a;
+            color: black;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .logout-button:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .user-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .user-details {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-group button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .button-group button.change-password {
+            background-color: #4CAF50;
+        }
+
+        .button-group button.delete-account {
+            background-color: #f44336;
+        }
+
+        .button-group button:hover {
+            opacity: 0.8;
+        }
+    
+body {
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin-top: 50px;
+  position: relative;
+  width: 500px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  backdrop-filter: blur(20px);
+  box-shadow: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn {
+  width: 100%;
+  height:20px;
+}
+
+
+/* Footer Styles */
+footer {
+	margin-top: auto;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+	
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 0;
+}

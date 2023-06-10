@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buyer Inquiry Form</title>
+  <link href="./css/tets css.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container"> 
+    <!-- Header -->
+    
+
+    <?php if (isset($_SESSION['message'])): ?>
+    <div class="msg">
+      <?php 
+        echo $_SESSION['message']; 
+        unset($_SESSION['message']);
+      ?>
+    </div>
+    <?php endif ?>
+    <?php $results = mysqli_query($db, "SELECT * FROM buyerinquiry"); ?>
+
+  
+
+    <div class="container">
+      <form method="post" action="BuyerInquiry.php">
+        <h2>Buyer Details</h2>
+        <!-- <label for="inquiryID">ID:</label><br>
+        <input type="number" id="inquiryID" name="inquiryID" readonly><br><br> -->
+        <input type="hidden" name="inquiryID" value="<?php echo $id; ?>">
+        <label for="FullName">Full Name:</label><br>
+        <input type="text" id="FullName" name="FullName" placeholder="Enter your full name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+        <label for="contactNo">Contact No:</label><br>
+        <input type="tel" id="contactNo" name="contactNo" placeholder="Enter your phone number"><br><br>
+        <label for="Address">Address:</label><br>
+        <input type="text" id="Address" name="Address" placeholder="Enter your address"><br><br>
+        <h3>Details for a preferred Land</h3>
+        <label for="district">Select a district:</label>
+        <select id="district" name="district" placeholder="Select your district">
+          <option value="Colombo">Colombo</option>
+          <option value="Gampha">Gampha</option>
+          <option value="Kalutara">Kalutara</option>
+        </select><br><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" placeholder="Enter your preferred city"><br><br>
+        <label for="price">Price:</label><br>
+        <input class="number" id="price" name="price" placeholder="Enter your preferred price"><br><br>
+        <label for="PropertyFD">Property Details & Facilities:</label><br>
+        <textarea style="width:99%;" id="PropertyFD" name="PropertyFD" rows="4" cols="50"></textarea><br><br>
+
+        <button type="reset" name="clear">Clear</button>
+        <button type="submit" name="update">Update</button>
+        <button type="submit" name="save">Save</button>
+      </form>
+    </div>
+
+    
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const logoutButton = document.querySelector('.logout-button');
+
+        logoutButton.addEventListener('click', () => {
+          const result = confirm('Are you sure you want to logout?');
+
+          if (result) {
+            window.location = 'logout.php';
+          }
+        });
+      });
+    </script>
+</body>
+</html>

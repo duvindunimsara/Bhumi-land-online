@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/about us.css">
+
+    <title>Logout Pop-up Example</title>
+    <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+            const logoutButton = document.querySelector('.logout-button');
+
+            logoutButton.addEventListener('click', () => {
+                const result = confirm('Are you sure you want to logout?'); // Display the pop-up dialog box
+
+                if (result) {
+                    // User clicked "OK" or "Yes"
+                    // Perform logout action or redirect to logout page
+                    window.location = 'logout.php';
+                } else {
+                    // User clicked "Cancel" or "No"
+                    // Do nothing or perform any desired action
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <!-- Navigation links -->
+        <a href="./index.html">Home</a>
+        <a href="./about us.html">About Us</a>
+        <a href="Lands main page.html">Land</a>
+        <a href="./payment.html">Payment Plans</a>
+        <a href="./contact us.html">Contact Us</a>
+        <a href="./user_info.php">User Info</a>
+        <a href="./login.php">Login</a>
+        <input type="text" id="searchInput" onclick="searchGoogle()" placeholder="Search on Google" />
+        <button class="logout-button">Logout</button>
+    </div>
+    
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+
+      <div class="aboutus"> 
+        <div class="abcontainer">
+            <div class="abimg">
+               <img src="./img/IMGfi.jpg" alt="land">
+               <h2 >ABOUT US</h2>
+               <p >Welcome to<span> BHUMI LAND SALES</span>, the premier land sale company dedicated to connecting buyers with their perfect property.
+                With years of expertise in the real estate industry, we specialize in helping individuals and investors find the ideal land for their specific needs. 
+                Whether you're searching for residential, commercial, agricultural, or recreational land, we have a wide range of options to suit your requirements.
+                Our commitment to customer satisfaction is unwavering. We believe in transparency, honesty, and professionalism, and we strive to provide exceptional service to each client.
+                Discover the possibilities with Land and let us help you find the perfect piece of land to build your dreams upon. 
+                Contact us today and let's embark on this exciting journey together.</p>
+            </div>
+
+    
+        </div>
+      </div>
+
+      <div class="endcontainer">
+        <div class="leftsection">
+            <img src="./img/imgnew.jpg" alt="left image">
+        </div >
+        <div class="middlesection">
+            <div class="Mcontainer">
+                <h3>OUR VISION</h3>
+                <p>To pave an unfaltering path to reach 
+                    client’s aspirations in quality residential environment.
+                </p>
+            </div>
+        </div>
+        <div class="rightsection">
+            <div class="Rcontainer">
+                <h3>OUR MISSION</h3>
+                <p>By providing properly developed lands through 
+                    sheer dedication of a highly motivated team always ready to add their 
+                    extra to enhance the quality of the service to ensure complete satisfaction
+                    in residential requirements of our valuable customers.
+                </p>
+            </div>
+
+        </div>
+      </div>
+        
+
+ 
+
+      <footer>
+        <!-- Footer content -->
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="mailto:info@bhumi.gmail.com" style="color: white;">Email: info@bhumi.gmail.com</a>
+                <p>Fax: +94115579862</p>
+                <p>Contact Number: +94115579861</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">FAQ</a>
+                <p>Technical Support: +9415579855</p>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p><center>&copy; 2023- Bhumi lands- All Rights Reserved
+                Concept, Design & Development by Web Bhumi</center></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

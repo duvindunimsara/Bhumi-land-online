@@ -1,0 +1,69 @@
+/* style.css */
+
+/* Apply styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+  
+  /* Apply styles to the form */
+  form {
+    width: 400px;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .msg {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .edit_btn,
+  .del_btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+  .edit_btn:hover,
+  .del_btn:hover {
+    background-color: #45a049;
+  }
+  
